@@ -14,7 +14,7 @@ plt.scatter(feature_set[:,0], feature_set[:,1], c=labels, cmap=plt.cm.winter)"""
 feature_set.shape
 labels = labels.reshape(100, 1)
 labels.shape
-lr = 0.07
+lr = 0.072
 
 
 def sigmoid(x):
@@ -81,7 +81,7 @@ def iterations():
 
     losses = []
 
-    for epoch in range(20000):
+    for epoch in range(30000):
         # Feed Forward
 
         c = forward_propogation(feature_set, wh1, wh2, wo)
